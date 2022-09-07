@@ -42,7 +42,7 @@ jobs:
 
           # [Mandatory]
           # The GitHub token automatically generated for the job
-          JF_GIT_TOKEN: "eyJ2ZXIiOiIyIiwidHlwIjoiSldUIiwiYWxnIjoiUlMyNTYiLCJraWQiOiJITi1MUlpwZnYxd1N3UkhHSHVVY0RHekpoeEM1NHlvUGw5TVE0MW95S3M0In0.eyJleHQiOiJ7XCJyZXZvY2FibGVcIjpcInRydWVcIn0iLCJzdWIiOiJqZmFjQDAxZ2M4Z3A1MzlodGh4MXBwNGV3YmMwZWJmXC91c2Vyc1wvc2N5YmVycyIsInNjcCI6ImFwcGxpZWQtcGVybWlzc2lvbnNcL2FkbWluIiwiYXVkIjoiKkAqIiwiaXNzIjoiamZmZUAwMDAiLCJpYXQiOjE2NjI1Mjg2MjUsImp0aSI6ImRjNzA0NTFlLTRhMTgtNDFmNC05NDViLTU0ZjA3MzgxZDMyNiJ9.OJ-NGlZ0wGDTtf34guikJfb85VSQhy-dGjXgAs5a8PX6E7TNSTD4FU5cxK-q4HvmXp4pZyQq0lNr6L0OVegB2BgYGyJ_K3JIpCXg4upsH8cC3n5Da8BYQnjl9tfvnrYUB97DGrDWd3i7Rrfmlu9-XacGug8dK5oHIAJL0AxRlToa6qjp1M4rl4B4hOxBD87iozQg0QKSPyOcYYQhmxCScpBpi5cgMW5-63z5CptFkUjbpGtvJms_ULmYI3wnqVwJh-u17R7BDPdBaEVkp338kNfqR3hCH5eYfirtFLL75_ieWrPLJGCZcreZAeHjp3fQu-18Eu9JTuKoxg4q19ObwA"
+          JF_GIT_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
           # Uncomment the below options if you'd like to use them.
 
@@ -52,7 +52,7 @@ jobs:
 
           # [Mandatory if JF_USER and JF_PASSWORD are not provided]
           # JFrog access token with 'read' permissions on Xray service
-          # JF_ACCESS_TOKEN: ${{ secrets.JF_ACCESS_TOKEN }}
+          JF_ACCESS_TOKEN: "eyJ2ZXIiOiIyIiwidHlwIjoiSldUIiwiYWxnIjoiUlMyNTYiLCJraWQiOiJITi1MUlpwZnYxd1N3UkhHSHVVY0RHekpoeEM1NHlvUGw5TVE0MW95S3M0In0.eyJleHQiOiJ7XCJyZXZvY2FibGVcIjpcInRydWVcIn0iLCJzdWIiOiJqZmFjQDAxZ2M4Z3A1MzlodGh4MXBwNGV3YmMwZWJmXC91c2Vyc1wvdGhhcnVzaGFyYXNoaW5pOTgxOUBnbWFpbC5jb20iLCJzY3AiOiJhcHBsaWVkLXBlcm1pc3Npb25zXC9hZG1pbiIsImF1ZCI6IipAKiIsImlzcyI6ImpmZmVAMDAwIiwiaWF0IjoxNjYyNTM0NTQyLCJqdGkiOiIwOTM4NTk3NS0zNWQ2LTQ2NTktYTlmNS1iMzQxZDAwNTMzMTIifQ.YEMWhX02nggxraCZg_Mni3BK06dlvBGmgLtclK2rldRuXI3aTRafdrJ_OsC99uFZYtT8sRvp42-PZ0dv3zjdzNiO1Jpk7us2CoXVGbl9g2CbV4DjU6PITUpa1k9lpNd5HuK3Rm-HLVcnt_4Ntrl86wfM1KkVM05JvRXpVLWXRHth2dhhEGX0uayUz7yhwOp7RYuPnXgLJNj6He982jKo40uFdoEZO6BPzaqwoeKouxYzRMSVLU2-nFDpjF-QtjBG1wVAKYU-LyeVaKmiuMPBlkRs4tsMhIDZ7C1F0K_FjHiBhUsC632BBqavtSjJ2e5mC_8Afw1DmKFTp1k32bFiTw"
 
           # [Optional, default: "."]
           # Relative path to the project in the git repository
