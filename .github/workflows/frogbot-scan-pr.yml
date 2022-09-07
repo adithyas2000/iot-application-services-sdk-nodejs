@@ -30,7 +30,7 @@ jobs:
 
           # [Mandatory]
           # JFrog platform URL (This functionality requires version 3.29.0 or above of Xray)
-          JF_URL: ${{ secrets.JF_URL }}
+          JF_URL: "https://scybers123.jfrog.io"
 
           # [Mandatory if JF_ACCESS_TOKEN is not provided]
           # JFrog username with 'read' permissions for Xray. Must be provided with JF_PASSWORD
